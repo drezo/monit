@@ -8,6 +8,11 @@ const ReportSchema = new Schema({
     ref: 'User',
     required: true
   },
+  http: {
+    type: Number,
+    required: true
+  },
+  message: String,
   createdAt: {
     type: Date,
     default: Date.now
