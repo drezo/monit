@@ -8,4 +8,6 @@ bot.telegram.setWebhook(`${WEBHOOK_URL}/${WEBHOOK_PREFIX}`);
 
 bot.start(ctx => ctx.reply('Hello!'));
 
+bot.on('text', ctx => ctx.reply('Command not found :('));
+
 module.exports = bot;
